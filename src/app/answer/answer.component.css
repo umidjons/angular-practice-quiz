@@ -1,0 +1,7 @@
+label {
+  font-weight: normal;
+}
+
+input[type=radio] {
+  margin-right: 10px;
+}

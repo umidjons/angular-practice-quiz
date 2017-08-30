@@ -1,7 +1,10 @@
-<p>{{ question.question }}</p>
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{ question.question }}</h3>
+  </div>
 
-<ul>
-  <li *ngFor="let answer of question.answers">
-    <label><input type="radio" name="answer{{question.id}}" [value]="answer.text"> {{ answer.text }}</label>
-  </li>
-</ul>
+  <div class="panel-body">
+    <answers [answers]="question.answers" [questionId]="question.id"></answers>
+  </div>
+</div>
+
